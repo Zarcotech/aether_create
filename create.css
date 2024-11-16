@@ -1,0 +1,22 @@
+
+#bio {
+    height: 100px;
+    width: 300px;
+}
+
+#bgWebsite {
+    text-align: center;
+}
+
+#submitBtn {
+    border: none;
+    background-color: turquoise;
+    border-radius: 3px;
+    font-size: 30px;
+    width: 270px;
+}
+
+#submitBtn:hover {
+    background-color: rgb(37, 129, 120);
+    cursor: pointer;
+}

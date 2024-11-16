@@ -64,14 +64,43 @@
         transform: translateX(-10%);
         opacity: 0.75;
     }
-    98% {
-        transform: translateX(-9.99%);
-    }
-    99% {
-        transform: translateX(-9.97);
-    }
     100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
+.formgoto {
+    border: none;
+    background-color: turquoise;
+    border-radius: 3px;
+    font-size: 30px;
+    width: 260px;
+    animation: motion 2s ease-out forwards;
+}
+
+.formgoto:hover {
+    background-color: rgb(37, 129, 120);
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 300px;
+}
+
+hr {
+    border-width: 90%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+form {
+    border: 3px solid black;
+    border-radius: 3px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
