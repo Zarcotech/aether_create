@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.raindrop {
+    position: absolute;
+    bottom: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: fall linear infinite;
+    z-index: 5;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background: grey;
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    animation: motion 2s ease-out forwards;
+}
+
+@keyframes motion {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(20%);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateX(-10%);
+        opacity: 0.75;
+    }
+    98% {
+        transform: translateX(-9.99%);
+    }
+    99% {
+        transform: translateX(-9.97);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
